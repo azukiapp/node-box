@@ -1,0 +1,27 @@
+{
+  // Box info
+  "name": "node",
+  "version": "0.0.1",
+  "description": "box with node.js",
+  "keywords": [ "node", "npm" ],
+  "packages": [ "node@v0.10.22", "npm@1.3.14" ],
+
+  // Box base
+  "platform": "ubuntu:12.04",
+
+  // Build steps
+  "build": [
+    "# install base tools",
+      "apt-get update",
+      "apt-get install -y wget git-core",
+      "apt-get install -y python-software-properties python g++ make",
+
+    // Add ppa:chris-lea/node.js repository
+    "# Add ppa:chris-lea/node.js repository",
+      "add-apt-repository -y ppa:chris-lea/node.js",
+      "echo 'deb http://archive.ubuntu.com/ubuntu precise universe' >> /etc/apt/sources.list",
+      "apt-get update",
+      "apt-get install nodejs"
+  ]
+}
+
