@@ -1,4 +1,7 @@
 {
+  // App id
+  "id": "d7094778aafb491",
+
   // Box info
   "name": "node",
   "version": "0.0.3",
