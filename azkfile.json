@@ -4,7 +4,7 @@
 
   // Box info
   "name": "node",
-  "version": "0.0.5"
+  "version": "0.0.6",
   "description": "box with node.js",
   "keywords": [ "node", "npm" ],
   "packages": [ "node@v0.10.26", "npm@1.4.3" ],
