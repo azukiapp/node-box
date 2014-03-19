@@ -1,4 +1,4 @@
-# ruby-box
+# node-box
 
 [Azk](http://azk.io) box for node.js.
 
